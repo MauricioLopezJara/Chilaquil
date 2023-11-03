@@ -1,3 +1,4 @@
+pip install cvzone
 import cv2
 import streamlit as st
 import tempfile
