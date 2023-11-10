@@ -68,8 +68,8 @@ def pagina_contacto():
 
     with Cinco_col:
         st.image("5.png", width=200)
-        st.markdown("**   Nombre:** Francisco")
-        st.markdown("**   Apellido:** Moreno")
+        st.markdown("**---Nombre:** Francisco")
+        st.markdown("**---Apellido:** Moreno")
         link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link, unsafe_allow_html=True)
 
