@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import scipy as sp
-import requests
 import numpy as np
 
 # Configuración de la página
@@ -22,8 +20,7 @@ def pagina_bienvenida():
     st.title("NASA Reconexión Magnética de la Tierra")
     st.write("""La reconexión magnética es un proceso en el que las líneas de campo magnético de diferentes dominios magnéticos se rompen, se vuelven a conectar y crean nuevas configuraciones. En este fenómeno, las líneas de campo magnético se aproximan entre sí y se vuelven antiparalelas; las fuerzas de tensión magnética impiden la colisión inmediata y conducen a la formación de una fina capa de corriente denominada "región de difusión". En la región de difusión, las líneas de campo magnético se rompen y vuelven a conectarse, y el proceso libera energía magnética, convirtiéndola en energía cinética y calor. Comprender la reconexión magnética es crucial para estudiar la física solar y espacial, así como para predecir y mitigar los impactos de los fenómenos meteorológicos espaciales en sistemas tecnológicos como los satélites y las redes eléctricas.""")
     st.header("Cómo afecta la reconexión magnética")
-    st.write(
-        "")
+    st.write("")
     st.write("""La reconexión magnética puede tener varios efectos en los satélites y sistemas espaciales. Éstas son algunas de las formas en que puede afectarles:""")
     # URL del video de YouTube
     video_url = "https://www.youtube.com/watch?v=mgUZwoR0gcE"
@@ -41,26 +38,19 @@ def pagina_bienvenida():
     if st.button("4.- ¡Errores de navegación"):
         st.write("""Los fenómenos de reconexión magnética pueden influir en el campo magnético de la Tierra, provocando desviaciones temporales en las lecturas de la brújula magnética.""")
     if st.button("5.- ¡Tormentas geomagnéticas"):
-        st.write("""Los fenómenos de reconexión magnética intensa en el Sol, como las erupciones solares y las eyecciones de masa coronal, pueden provocar tormentas geomagnéticas en la Tierra. Estas tormentas pueden inducir corrientes eléctricas en la ionosfera terrestre y en el suelo, afectando a los sistemas de satélites y a las redes eléctricas.""")    
-
+        st.write("""Los fenómenos de reconexión magnética intensa en el Sol, como las erupciones solares y las eyecciones de masa coronal, pueden provocar tormentas geomagnéticas en la Tierra. Estas tormentas pueden inducir corrientes eléctricas en la ionosfera terrestre y en el suelo, afectando a los sistemas de satélites y a las redes eléctricas.""")
 
 # Función para la página de información (Opción 2)
 def Datos():
     st.title("Información sobre Reconexión Magnética")
     # Agrega más contenido informativo aquí si lo deseas
 
-    # Agregar un botón para ejecutar el código
-    if st.button("Ejecutar Análisis de Datos"):
-        fig = analyze_data()  # Llama a la función de análisis y obtén la figura
 
-        # Muestra la figura en Streamlit
-        st.pyplot(fig)
-    if st.button("Ejecutar Análisis de Datos 2"):
-        fig = predict()  # Llama a la función de análisis y obtén la figura
-
-        # Muestra la figura en Streamlit
-        st.pyplot(fig)
-
+# Función para analizar los datos
+def analyze_data():
+    st.title("Datos")
+    # Aquí va la implementación real de la función analyze_data
+    # Por ahora, puedes dejarla vacía o agregar algún mensaje de prueba
 
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
@@ -84,10 +74,8 @@ def pagina_contacto():
         link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link, unsafe_allow_html=True)
 
-    
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
-
 
 # Elementos del menú
 opciones = ["Bienvenida", "Datos", "Contacto"]
@@ -100,5 +88,5 @@ elif eleccion == "Datos":
     Datos()
 elif eleccion == "Contacto":
     pagina_contacto()
-#st.sidebar.image("https://universitam.com/academicos/wp-content/uploads/2016/11/reconexion-400x203.jpeg", caption="Descripción de la imagen", use_container_width=True)
-#st.sidebar.image("Reconexion.jpeg")
+# st.sidebar.image("https://universitam.com/academicos/wp-content/uploads/2016/11/reconexion-400x203.jpeg", caption="Descripción de la imagen", use_container_width=True)
+# st.sidebar.image("Reconexion.jpeg")
