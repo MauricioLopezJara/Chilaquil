@@ -61,10 +61,6 @@ def Datos():
         # Muestra la figura en Streamlit
         st.pyplot(fig)
 
-# Función para analizar los datos
-def analyze_data():
-    st.title("Datos")
-    
 
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
