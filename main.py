@@ -1,9 +1,9 @@
 import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-import scipy as sp
-import requests
-import numpy as np
+#import pandas as pd
+#import matplotlib.pyplot as plt
+#import scipy as sp
+#import requests
+#import numpy as np
 
 # Configuración de la página
 st.set_page_config(
