@@ -63,6 +63,7 @@ def Datos():
 
 # Función para analizar los datos
 def analyze_data():
+    st.title("Datos")
     
 
 # Función para la página de contacto (Opción 3)
