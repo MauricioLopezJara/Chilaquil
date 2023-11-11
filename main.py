@@ -61,15 +61,15 @@ def pagina_contacto():
 
     with Cuatro_col:
         st.image("4.png", width=180)
-        st.markdown("**Nombre:** Mauricio")
-        st.markdown("**Apellido:** Lopez")
+        st.markdown("**Nombre:** Luis Mauricio")
+        st.markdown("**Apellido:** Lopez Jaramillo")
         link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link, unsafe_allow_html=True)
 
     with Cinco_col:
         st.image("5.png", width=180)
-        st.markdown("**Nombre:** Sergio")
-        st.markdown("**Apellido:** Huerta")
+        st.markdown("**Nombre:** Sergio Arturo")
+        st.markdown("**Apellido:** Meza Huerta")
         link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link, unsafe_allow_html=True)
 
