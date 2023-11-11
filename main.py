@@ -29,19 +29,19 @@ def pagina_bienvenida():
     # Botón
     # Botón
     if st.button("1.- ¡Arriesgar la salud de los trabajadores!"):
-        st.write("""Las partículas cargadas pueden acelerarse y dirigirse hacia los satélites. Esta afluencia de partículas cargadas puede provocar la carga de las superficies de los satélites.""")
+        st.write("""En algunos trabajas en diversos campos como en desarrollo de cultivos celulares es muy importante la biosegurad de los trabajadores y es muy importantes para los patrones la seguridad de sus empleados por tal motivo es mejor que algunas maquinas hagan el trabajo de los hombres""")
     if st.button("2.- ¡Automatizacion de procesos que requieran alta precision!"):
-        st.write("""Los cambios en las condiciones ionosféricas y magnetosféricas durante los fenómenos de reconexión magnética pueden provocar interferencias que pueden afectar a las señales de comunicación de los satélites que atraviesan estas regiones.""")
+        st.write("""Algunas maquinas necesitan un alto grado de presicion y que mejor que la computadora o la maquina pueda copiar exactamente el movimiento de una persona y se pueda programar correctamente el moviemnto a realizar para una optima ejecucio de la tarea o trabajo que este buscando desempeñar""")
     if st.button("3.- ¡Puede servir para mejorar las capacitaciones de los trabajadores "):
-        st.write(""" La interacción de los satélites con los campos magnéticos perturbados durante los fenómenos de reconexión puede inducir cambios en sus órbitas. Aunque este efecto es generalmente pequeño para la mayoría de los satélites, es algo que debe tenerse en cuenta.""")
+        st.write("""Mejorando los procesos podemos almacenar los objetivos conseguidos con rastreos de manos los cuales pueden servir para que los trabajadore tengan un mejor entendimiendo de que y como se debe hacer la actividad y en base a esto minimizar los riesgos y maximizar el exito en las actividades""")
     if st.button("4.- ¡Mejorar la calidad de vida de los trabajadores "):
-        st.write("""Los fenómenos de reconexión magnética pueden influir en el campo magnético de la Tierra, provocando desviaciones temporales en las lecturas de la brújula magnética.""")
+        st.write("""Cuando cuidamos a los trabajadores y los ayudamos con mejores capacitaciones y mejores herramientas no solo mejorams la calidad de vida de los trabajadores si no que aumentamos su productividad lo cual en terminos economicos siempre resulta un beneficio economico para todos.""")
     if st.button("5.- ¡Optimizacion de Procesos mecanicos "):
-        st.write("""Los fenómenos de reconexión magnética intensa en el Sol, como las erupciones solares y las eyecciones de masa coronal, pueden provocar tormentas geomagnéticas en la Tierra. Estas tormentas pueden inducir corrientes eléctricas en la ionosfera terrestre y en el suelo, afectando a los sistemas de satélites y a las redes eléctricas.""")
+        st.write("""Este proyecto tiene una gran ventaja el cual es la escalabilidad y automatizacion de proceso ya que una simple mano parece no ser una buena idea sin embargo el proceso de copiar y reproducir el moviemiento de 1 mano humana no solo tiene este potencial este trabajao se puede usar para 10 manos o 100 o 1000 al mismo tiempo lo cual podria disminuir los tiempos de algunas actividades""")
 
 # Función para la página de información (Opción 2)
 def Datos():
-    st.title("Información sobre Reconexión Magnética")
+    st.title("Información sobre la contruccion del proyecto Mano Tech")
     # Agrega más contenido informativo aquí si lo deseas
 
 
