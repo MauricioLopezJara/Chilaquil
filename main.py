@@ -5,7 +5,7 @@ import numpy as np
 # Configuración de la página
 st.set_page_config(
     page_title="ManoTech",
-    page_icon="🤖🔧",
+    page_icon="🤖",
     layout="centered"
 )
 
@@ -28,15 +28,15 @@ def pagina_bienvenida():
     st.video(video_url)
     # Botón
     # Botón
-    if st.button("1.- ¡Daño a los sistemas satelitales!"):
+    if st.button("1.- ¡Arriesgar la salud de los trabajadores!"):
         st.write("""Las partículas cargadas pueden acelerarse y dirigirse hacia los satélites. Esta afluencia de partículas cargadas puede provocar la carga de las superficies de los satélites.""")
-    if st.button("2.- ¡Perturbaciones en la propagación de las ondas de radio!"):
+    if st.button("2.- ¡Automatizacion de procesos que requieran alta precision!"):
         st.write("""Los cambios en las condiciones ionosféricas y magnetosféricas durante los fenómenos de reconexión magnética pueden provocar interferencias que pueden afectar a las señales de comunicación de los satélites que atraviesan estas regiones.""")
-    if st.button("3.- ¡Cambio en la órbita de los satélites"):
+    if st.button("3.- ¡Puede servir para mejorar las capacitaciones de los trabajadores "):
         st.write(""" La interacción de los satélites con los campos magnéticos perturbados durante los fenómenos de reconexión puede inducir cambios en sus órbitas. Aunque este efecto es generalmente pequeño para la mayoría de los satélites, es algo que debe tenerse en cuenta.""")
-    if st.button("4.- ¡Errores de navegación"):
+    if st.button("4.- ¡Mejorar la calidad de vida de los trabajadores "):
         st.write("""Los fenómenos de reconexión magnética pueden influir en el campo magnético de la Tierra, provocando desviaciones temporales en las lecturas de la brújula magnética.""")
-    if st.button("5.- ¡Tormentas geomagnéticas"):
+    if st.button("5.- ¡Optimizacion de Procesos mecanicos "):
         st.write("""Los fenómenos de reconexión magnética intensa en el Sol, como las erupciones solares y las eyecciones de masa coronal, pueden provocar tormentas geomagnéticas en la Tierra. Estas tormentas pueden inducir corrientes eléctricas en la ionosfera terrestre y en el suelo, afectando a los sistemas de satélites y a las redes eléctricas.""")
 
 # Función para la página de información (Opción 2)
