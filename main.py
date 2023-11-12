@@ -46,8 +46,17 @@ def Datos():
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
-    # Create a table with 5 rows and 2 columns
-    st.table([["Componentes", "Número Componentes necesarios"]], data=[["Servomotores", 5], ["Cables Dupont", 16]])
+    # Datos para la tabla
+    datos = {
+        "Componentes": ["Servomotores", "Cables Dupont", "Fuente de alimentacion externa", "Arduino Uno"],
+        "Número Componentes necesarios": [5, 16, 1, 1]
+    }
+
+    # Crear un DataFrame de pandas
+    df = pd.DataFrame(datos)
+
+    # Mostrar la tabla con algunos kwargs
+    st.table(df, width=400, height=200, key="mi_tabla")
 
     
 # Función para la página de contacto (Opción 3)
