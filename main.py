@@ -54,7 +54,7 @@ def Datos_del_proyecto():
     st.table(df)
     st.title("Diagrama de conecciones")
     st.write("A continuacion mostraremos el diagrama esquematico en forma de diagrama de Tinkercad mas sencillo de distinguir lo que serian las conecciones")
-    st.image("Imagen3.jpeg")
+    st.image("Imagen3.png")
 
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
