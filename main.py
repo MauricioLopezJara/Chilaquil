@@ -15,7 +15,7 @@ def pagina_bienvenida():
     left_col, mid_col, right_col = st.columns(3)
 
     # Muestra la imagen en la columna central
-    mid_col.image("Nasa.png", width=200)
+    mid_col.image("Uni.png", width=200)
     st.title("Poster Machine Hand")
     st.write("Ayudame a llenar este pedo")
     st.header("Ayudame a llenar este pedo")
