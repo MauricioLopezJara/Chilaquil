@@ -40,20 +40,20 @@ def pagina_bienvenida():
         st.write("""Este proyecto tiene una gran ventaja el cual es la escalabilidad y automatizacion de proceso ya que una simple mano parece no ser una buena idea sin embargo el proceso de copiar y reproducir el moviemiento de 1 mano humana no solo tiene este potencial este trabajao se puede usar para 10 manos o 100 o 1000 al mismo tiempo lo cual podria disminuir los tiempos de algunas actividades""")
 
 # Función para la página de información (Opción 2)
-def Datos():
+def Datos_del_proyecto():
     st.title("Información sobre la contruccion del proyecto Mano Tech")
     st.write("A continuacion podra Observar el diagrama esquematico del Proyecto al igual que algunos videos que muestran las fases de la contruccion de este muy bonito e interesante proyecto")
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
-    
-    
+
+
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
     st.title("Contáctenos")
     st.write("Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros.")
 
-    # Crea 6 columnas
+    # Crea 2 columnas
     Cuatro_col, Cinco_col= st.columns(2)
 
     with Cuatro_col:
@@ -74,13 +74,13 @@ def pagina_contacto():
 st.sidebar.markdown("Bienvenido al Menu")
 
 # Elementos del menú
-opciones = ["Bienvenida", "Datos", "Contacto"]
+opciones = ["Bienvenida", "Datos del proyecto", "Contacto"]
 eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 
 # Contenido de la página según la elección
 if eleccion == "Bienvenida":
     pagina_bienvenida()
-elif eleccion == "Datos":
-    Datos()
+elif eleccion == "Datos del proyecto":
+    Datos_del_proyecto()
 elif eleccion == "Contacto":
     pagina_contacto()
