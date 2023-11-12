@@ -22,7 +22,7 @@ def pagina_bienvenida():
     st.write("Ayudame a llenar este pedo")
     st.write("Ayudame a llenar este pedo")
         # URL del video de YouTube
-    video_url = "https://youtu.be/7YVqNUZpnDE"
+    video_url = "https://youtu.be/lvIDTmyw6RU?si=I0cxedUcPvUTHEkY"
 
     # Mostrar el video de YouTube en la interfaz
     st.video(video_url)
