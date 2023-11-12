@@ -46,9 +46,7 @@ def Datos():
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito")
-    df = pd.DataFrame(np.random.randn(10, 5), columns=("col %d" % i for i in range(5)))
-
-    st.table(df)
+    
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
     st.title("Contáctenos")
