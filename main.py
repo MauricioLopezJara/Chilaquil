@@ -6,7 +6,7 @@ import numpy as np
 st.set_page_config(
     page_title="ManoTech",
     page_icon="🤖",
-    layout="centered"
+    layout="wide"
 )
 
 # Función para la página de bienvenida
