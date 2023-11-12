@@ -52,8 +52,8 @@ def Datos_del_proyecto():
     df = pd.DataFrame(datos)
     # Mostrar la tabla
     st.table(df)
-    st.header("Diagrama de conecciones")
-    st.wirte("A continuacion mostraremos el diagrama esquematico en forma de diagrama de Tinkercad mas sencillo de distinguir lo que serian las conecciones")
+    st.title("Diagrama de conecciones")
+    st.write("A continuacion mostraremos el diagrama esquematico en forma de diagrama de Tinkercad mas sencillo de distinguir lo que serian las conecciones")
     st.image("Imagen3.jpeg")
 
 # Función para la página de contacto (Opción 3)
