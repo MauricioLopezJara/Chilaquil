@@ -46,14 +46,15 @@ def Datos():
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito")
-    # Crear una tabla de 2 por 2
-    tabla = st.table([[None, None], [None, None]])
+    # Crear una tabla de N filas por 2 columnas
+    num_filas = 5  # Ajusta este número según la cantidad de componentes que tengas
+    tabla = st.table([[None, None] for _ in range(num_filas)])
 
     # Asignar valores a las celdas
     tabla[0][0] = "Componentes"
     tabla[0][1] = "Número Componentes necesarios"
     tabla[1][0] = "Servomotores"
-    tabla[1][1] = 5  # Número de objetos necesarios para el Componente 1
+    tabla[1][1] = 5
     tabla[2][0] = "Cables Dupont"
     tabla[2][1] = 16
     tabla[3][0] = "Fuente de alimentacion externa"
@@ -63,15 +64,6 @@ def Datos():
 
     # Mostrar la tabla
     st.write(tabla)
-
-    # Agrega más contenido informativo aquí si lo deseas
-
-
-# Función para analizar los datos
-def analyze_data():
-    st.title("Datos")
-    # Aquí va la implementación real de la función analyze_data
-    # Por ahora, puedes dejarla vacía o agregar algún mensaje de prueba
 
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
