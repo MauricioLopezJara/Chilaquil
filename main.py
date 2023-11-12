@@ -27,7 +27,6 @@ def pagina_bienvenida():
     # Mostrar el video de YouTube en la interfaz
     st.video(video_url)
     # Botón
-    # Botón
     if st.button("1.- ¡Arriesgar la salud de los trabajadores!"):
         st.write("""En algunos trabajas en diversos campos como en desarrollo de cultivos celulares es muy importante la biosegurad de los trabajadores y es muy importantes para los patrones la seguridad de sus empleados por tal motivo es mejor que algunas maquinas hagan el trabajo de los hombres""")
     if st.button("2.- ¡Automatizacion de procesos que requieran alta precision!"):
