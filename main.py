@@ -46,17 +46,21 @@ def Datos():
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
-    # Crear una tabla de 5 filas por 2 columnas
-    datoss = [
-    ["Componentes", "Número Componentes necesarios"],
-    ["Servomotores", 5],
-    ["Cables Dupont", 16],
-    ["Fuente de alimentacion externa", 1],
-    ["Arduino Uno", 1]
-    ]
-    # Mostrar la tabla
-    st.table(datoss)
+    # Create a table with 5 rows and 2 columns
+    tabla = st.table([[None, None] for _ in range(5)], data=[["Componentes", "Número Componentes necesarios"]])
 
+    # Assign values to the cells
+    tabla[0][0] = "Servomotores"
+    tabla[0][1] = 5
+    tabla[1][0] = "Cables Dupont"
+    tabla[1][1] = 16
+    tabla[2][0] = "Fuente de alimentacion externa"
+    tabla[2][1] = 1
+    tabla[3][0] = "Arduino Uno"
+    tabla[3][1] = 1
+
+    # Show the table
+    st.write(tabla)
     
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
