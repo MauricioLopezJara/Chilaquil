@@ -15,7 +15,7 @@ def pagina_bienvenida():
     left_col, mid_col, right_col = st.columns(3)
 
     # Muestra la imagen en la columna central
-    mid_col.image("Nasa.png", width=200)
+    #mid_col.image("Nasa.png", width=200)
     st.title("Poster Machine Hand")
     st.write("Ayudame a llenar este pedo")
     st.header("Ayudame a llenar este pedo")
@@ -42,6 +42,24 @@ def pagina_bienvenida():
 # Función para la página de información (Opción 2)
 def Datos():
     st.title("Información sobre la contruccion del proyecto Mano Tech")
+    st.write("A continuacion podra Observar el diagrama esquematico del Proyecto al igual que algunos videos que muestran las fases de la contruccion de este muy bonito e interesante proyecto")
+    st.title("Diagrama esquimatico")
+    st.image("Esquematico.jpeg")
+    st.title("Materiales para el circuito")
+    # Crear una tabla de 2 por 2
+    tabla = st.table([[None, None], [None, None]])
+
+    # Asignar valores a las celdas
+    tabla[0][0] = "Componentes"
+    tabla[0][1] = "Número Componentes necesarios"
+    tabla[1][0] = "Servomotores"
+    tabla[1][1] = 5  # Número de objetos necesarios para el Componente 1
+    tabla[2][0] = "Cables Dupont"
+    tabla[2][1] = 16
+
+    # Mostrar la tabla
+    st.write(tabla)
+
     # Agrega más contenido informativo aquí si lo deseas
 
 
