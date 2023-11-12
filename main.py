@@ -47,10 +47,15 @@ def Datos():
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
     # Crear un DataFrame de pandas con valores aleatorios
-    df = pd.DataFrame(np.random.randn(7, 5), columns=('col %d' % i for i in range(5)))
+    # Datos para la tabla
+    datos = {
+    "Componentes": ["Servomotores", "Cables Dupont", "Fuente de alimentacion externa", "Arduino Uno"],
+    "Número Componentes necesarios": [5, 16, 1, 1]
+    }
+
 
     # Mostrar el DataFrame de manera interactiva
-    st.dataframe(df)
+    st.write(datos)
     
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
