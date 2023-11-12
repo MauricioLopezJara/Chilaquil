@@ -2,15 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.markdown("""
-<style>
-.st-image:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
-}
-</style>
-""")
-
 # Configuración de la página
 st.set_page_config(
     page_title="ManoTech",
