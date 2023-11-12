@@ -55,9 +55,8 @@ def Datos():
     # Crear un DataFrame de pandas
     df = pd.DataFrame(datos)
 
-    # Mostrar la tabla con algunos kwargs
-    st.table(df, width=400, height=200, key="mi_tabla")
-
+    # Mostrar la tabla con algunos kwargs usando st.dataframe
+    st.dataframe(df, width=400, height=200)
     
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
