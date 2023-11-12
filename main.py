@@ -45,7 +45,7 @@ def Datos():
     st.write("A continuacion podra Observar el diagrama esquematico del Proyecto al igual que algunos videos que muestran las fases de la contruccion de este muy bonito e interesante proyecto")
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
-    st.title("Materiales para el circuito")
+    st.title("Materiales para el circuito:")
     
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
