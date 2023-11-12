@@ -46,18 +46,9 @@ def Datos():
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito")
-    # Datos para la tabla
-    datos = {
-    "Componentes": ["Servomotores", "Cables Dupont", "Fuente de alimentacion externa", "Arduino Uno"],
-    "Número Componentes necesarios": [5, 16, 1, 1]
-    }
+    df = pd.DataFrame(np.random.randn(10, 5), columns=("col %d" % i for i in range(5)))
 
-# Crear un DataFrame de pandas
-    df = pd.DataFrame(datos)
-
-# Mostrar la tabla
-    st.write(df)
-
+    st.table(df)
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
     st.title("Contáctenos")
