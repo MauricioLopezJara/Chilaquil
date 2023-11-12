@@ -15,7 +15,7 @@ def pagina_bienvenida():
     left_col, mid_col, right_col = st.columns(3)
 
     # Muestra la imagen en la columna central
-    #mid_col.image("Nasa.png", width=200)
+    mid_col.image("Nasa.png", width=200)
     st.title("Poster Machine Hand")
     st.write("Ayudame a llenar este pedo")
     st.header("Ayudame a llenar este pedo")
@@ -46,17 +46,11 @@ def Datos():
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
-    # Datos para la tabla
-    datos = {
-        "Componentes": ["Servomotores", "Cables Dupont", "Fuente de alimentacion externa", "Arduino Uno"],
-        "Número Componentes necesarios": [5, 16, 1, 1]
-    }
+    # Crear un DataFrame de pandas con valores aleatorios
+    df = pd.DataFrame(np.random.randn(7, 5), columns=('col %d' % i for i in range(5)))
 
-    # Crear un DataFrame de pandas
-    df = pd.DataFrame(datos)
-
-    # Mostrar la tabla con algunos kwargs usando st.dataframe
-    st.dataframe(df, width=400, height=200)
+    # Mostrar el DataFrame de manera interactiva
+    st.dataframe(df)
     
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
