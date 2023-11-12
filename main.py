@@ -46,6 +46,11 @@ def Datos_del_proyecto():
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
+    # Crear un DataFrame de pandas con un solo valor
+    datos = {"Componente": ["Servomotores"], "Número Necesario": [5]}
+    df = pd.DataFrame(datos)
+    # Mostrar la tabla
+    st.table(df)
 
 
 # Función para la página de contacto (Opción 3)
