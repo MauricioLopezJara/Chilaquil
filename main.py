@@ -2,6 +2,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.markdown("""
+<style>
+.st-image:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+</style>
+""")
+
 # Configuración de la página
 st.set_page_config(
     page_title="ManoTech",
@@ -74,15 +83,6 @@ def pagina_contacto():
         st.markdown("**Apellido:** Meza Huerta")
         link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link, unsafe_allow_html=True)
-     # Agrega el CSS
-    st.markdown("""
-    <style>
-    .st-image:hover {
-      transform: scale(1.1);
-      opacity: 0.9;
-    }
-    </style>
-    """)
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
