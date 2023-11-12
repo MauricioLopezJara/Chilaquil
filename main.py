@@ -47,11 +47,11 @@ def Datos_del_proyecto():
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
     # Crear un DataFrame de pandas con un solo valor
-    datos = {"Componente": ["Servomotores"], "Número Necesario": [5]}
+    datos = {"Componente": ["Servomotores", "Cables Dupont", "Fuente de alimentación externa", "Arduino Uno", "Otro Componente"],
+    "Número Necesario": [5, 16, 1, 1, 10]}
     df = pd.DataFrame(datos)
     # Mostrar la tabla
     st.table(df)
-
 
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
