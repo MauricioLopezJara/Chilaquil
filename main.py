@@ -56,6 +56,10 @@ def Datos():
     tabla[1][1] = 5  # Número de objetos necesarios para el Componente 1
     tabla[2][0] = "Cables Dupont"
     tabla[2][1] = 16
+    tabla[3][0] = "Fuente de alimentacion externa"
+    tabla[3][1] = 1
+    tabla[4][0] = "Arduino Uno"
+    tabla[4][1] = 1
 
     # Mostrar la tabla
     st.write(tabla)
