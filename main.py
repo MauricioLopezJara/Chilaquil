@@ -48,11 +48,16 @@ def Datos():
     st.title("Materiales para el circuito:")
     # Crear un DataFrame de pandas con valores aleatorios
     # Datos para la tabla
-    datos = {"Componentes","Servomotores", "Cables Dupont", "Fuente de alimentacion externa", "Arduino Uno"}
-    datos2 = {"Número Componentes necesarios",5, 16, 1, 1}
+    datos = {
+        "Componentes": ["Servomotores", "Cables Dupont", "Fuente de alimentación externa", "Arduino Uno"],
+        "Número Componentes necesarios": [5, 16, 1, 1]
+    }
+
+    # Crear un DataFrame de pandas
+    df = pd.DataFrame(datos)
 
     # Mostrar el DataFrame de manera interactiva
-    st.table(datos,datos2)
+    st.write(df)
     
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
