@@ -55,7 +55,7 @@ def Datos():
 
 
     # Mostrar el DataFrame de manera interactiva
-    st.write(datos)
+    st.dateframe(datos, height=750)
     
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
