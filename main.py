@@ -46,6 +46,23 @@ def Datos():
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
+    # Crear una tabla de 5 filas por 2 columnas
+    num_filas = 5  # Ajusta este número según la cantidad de componentes que tengas
+    tabla = st.table([[None, None] for _ in range(num_filas)])
+    # Asignar valores a las celdas
+    tabla[0][0] = "Componentes"
+    tabla[0][1] = "Número Componentes necesarios"
+    tabla[1][0] = "Servomotores"
+    tabla[1][1] = 5
+    tabla[2][0] = "Cables Dupont"
+    tabla[2][1] = 16
+    tabla[3][0] = "Fuente de alimentacion externa"
+    tabla[3][1] = 1
+    tabla[4][0] = "Arduino Uno"
+    tabla[4][1] = 1
+
+    # Mostrar la tabla
+    st.write(tabla)
     
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
