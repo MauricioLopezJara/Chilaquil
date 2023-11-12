@@ -48,7 +48,7 @@ def Datos_del_proyecto():
     st.title("Materiales para el circuito:")
     # Crear un DataFrame de pandas con un solo valor
     datos = {"Componente": ["Servomotores", "Cables Dupont", "Fuente de alimentación externa", "Arduino Uno", "Otro Componente"],
-    "Número Necesario": [5, 16, 1, 1, 10]}
+    "Cantidad": [5, 16, 1, 1, 10]}
     df = pd.DataFrame(datos)
     # Mostrar la tabla
     st.table(df)
