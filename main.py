@@ -69,7 +69,7 @@ def Datos_del_proyecto():
     st.write("A continuacion mostraremos el diagrama esquematico en forma de diagrama de Tinkercad mas sencillo de distinguir lo que serian las conecciones")
     st.image("Imagen3.png")
     st.title("Resultados Obtenidos")
-    st.write("Sinceramente creemos que el proyecto tiene un gran alcance y al mismo tiempo es muy divertido de hacer este proyecto nos sirvio mucho para darnos cuenta que efectivamente si lo puedes imaginar o puedes crear muchas gracias por visitar nuestra pagina y checar nuestro proyecto")
+    st.write("Sinceramente creemos que el proyecto tiene un gran alcance y al mismo tiempo es muy divertido de hacer este proyecto nos sirvio mucho para darnos cuenta que efectivamente si lo puedes imaginar lo puedes crear muchas gracias por visitar nuestra pagina y checar nuestro proyecto")
     
 
 # Función para la página de contacto (Opción 3)
