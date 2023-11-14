@@ -26,10 +26,9 @@ def pagina_bienvenida():
         pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
         st.markdown(pdf_display, unsafe_allow_html=True)
 
-    # Coloca los botones en la misma fila
-    if st.button("Mostrar PDF") and not st.button("Ocultar PDF"):
+    if st.button("Mostrar PDF del proyecto ManoTech"):
         show_pdf('PosterFinalManotechFinal.pdf')
-    elif st.button("Ocultar PDF") and not st.button("Mostrar PDF"):
+    if st.button("Ocultar PDF"):
         st.markdown("PDF oculto")
     
     st.header("Fase Inicial del proyecto")
