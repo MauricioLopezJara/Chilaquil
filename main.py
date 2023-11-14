@@ -109,4 +109,4 @@ elif eleccion == "Datos del proyecto":
 elif eleccion == "Contacto":
     pagina_contacto()
 
-st.sidebar.image("4.png", use_column_width=True)
+st.sidebar.image("4.png", width = 100)
