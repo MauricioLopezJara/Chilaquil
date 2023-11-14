@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import base64
 
 # Configuración de la página
 st.set_page_config(
@@ -20,10 +21,10 @@ def pagina_bienvenida():
     st.write("Este proyecto busca demostrar el poder que se puede generar con un poco de conocimiento en programacion al igual que en electronica")
     
     def show_pdf(file_path):
-    with open(file_path,"rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+        with open(file_path, "rb") as f:
+            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+        st.markdown(pdf_display, unsafe_allow_html=True)
 
     show_pdf('PosterFinalManotechFinal.pdf')
     
