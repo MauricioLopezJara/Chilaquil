@@ -98,15 +98,15 @@ def pagina_contacto():
 st.sidebar.markdown("Bienvenido al Menu... 🏡")
 
 # Elementos del menú
-opciones = ["Bienvenida", "Datos del proyecto", "Contacto"]
+opciones = ["Bienvenida 🎇", "Datos del proyecto ✍🏼", "Contacto 📪"]
 eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 
 # Contenido de la página según la elección
-if eleccion == "Bienvenida":
+if eleccion == "Bienvenida 🎇":
     pagina_bienvenida()
-elif eleccion == "Datos del proyecto":
+elif eleccion == "Datos del proyecto ✍🏼":
     Datos_del_proyecto()
-elif eleccion == "Contacto":
+elif eleccion == "Contacto 📪":
     pagina_contacto()
 
 st.sidebar.markdown("")
