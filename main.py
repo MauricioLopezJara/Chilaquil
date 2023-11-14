@@ -99,12 +99,18 @@ st.sidebar.markdown("Bienvenido al Menu")
 
 # Elementos del menú
 opciones = ["Bienvenida", "Datos del proyecto", "Contacto"]
-eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
+icons = ["cast", "book", "envelope"]
+
+# Crear opciones con iconos en formato HTML
+opciones_con_iconos = [f'<i class="material-icons">{icon}</i> {opcion}' for icon, opcion in zip(icons, opciones)]
+
+# Seleccionar opción del menú
+eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones_con_iconos, format_func=lambda x: "")
 
 # Contenido de la página según la elección
-if eleccion == "Bienvenida":
+if "Bienvenida" in eleccion:
     pagina_bienvenida()
-elif eleccion == "Datos del proyecto":
+elif "Datos del proyecto" in eleccion:
     Datos_del_proyecto()
-elif eleccion == "Contacto":
+elif "Contacto" in eleccion:
     pagina_contacto()
