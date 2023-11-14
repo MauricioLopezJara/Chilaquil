@@ -95,7 +95,7 @@ def pagina_contacto():
         st.markdown(link, unsafe_allow_html=True)
 
 # Título del menú
-st.sidebar.markdown("Bienvenido al Menu")
+st.sidebar.markdown("Bienvenido al Menu 🏡")
 
 # Elementos del menú
 opciones = ["Bienvenida", "Datos del proyecto", "Contacto"]
