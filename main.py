@@ -27,7 +27,7 @@ def pagina_bienvenida():
         st.markdown(pdf_display, unsafe_allow_html=True)
 
     if st.button("Ocultar PDF"):
-        #st.markdown("")
+        st.markdown("")
     if st.button("Mostrar PDF del proyecto ManoTech"):
         show_pdf('PosterFinalManotechFinal.pdf')
     
