@@ -99,18 +99,23 @@ def pagina_contacto():
 st.sidebar.markdown("Bienvenido al Menu")
 
 # Elementos del menú
-with st.sidebar:
-    selected = option_menu(
-        menu_title = "Menu Principal",
-        opciones = ["Bienvenida", "Datos del proyecto", "Contacto"],
-        icons = ["cast","book","envelope"],
-        menu_icon ="house",
-        eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
+opciones = ["Bienvenida", "Datos del proyecto", "Contacto"]
+icons = ["cast", "book", "envelope"]
+
+# Seleccionar opción del menú
+eleccion_index = st.sidebar.selectbox("Selecciona una opción:", range(len(opciones)), format_func=lambda i: opciones[i])
+
+# Obtener la elección y el ícono seleccionado
+eleccion = opciones[eleccion_index]
+icono_seleccionado = icons[eleccion_index]
 
 # Contenido de la página según la elección
 if eleccion == "Bienvenida":
+    st.sidebar.markdown(f'<i class="material-icons">{icono_seleccionado}</i> {eleccion}', unsafe_allow_html=True)
     pagina_bienvenida()
 elif eleccion == "Datos del proyecto":
+    st.sidebar.markdown(f'<i class="material-icons">{icono_seleccionado}</i> {eleccion}', unsafe_allow_html=True)
     Datos_del_proyecto()
 elif eleccion == "Contacto":
+    st.sidebar.markdown(f'<i class="material-icons">{icono_seleccionado}</i> {eleccion}', unsafe_allow_html=True)
     pagina_contacto()
