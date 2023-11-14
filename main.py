@@ -27,7 +27,7 @@ def pagina_bienvenida():
         st.markdown(pdf_display, unsafe_allow_html=True)
 
     # Agrega un botón para mostrar el PDF
-    if st.button("Mostrar PDF"):
+    if st.button("Mostrar PDF del Proyecto ManoTech"):
         show_pdf('PosterFinalManotechFinal.pdf')
     
     st.header("Fase Inicial del proyecto")
