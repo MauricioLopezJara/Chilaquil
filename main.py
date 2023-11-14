@@ -6,7 +6,7 @@ import base64
 # Configuración de la página
 st.set_page_config(
     page_title="ManoTech",
-    page_icon="🤖",
+    page_icon="🦾🤖",
     layout="centered"
 )
 
