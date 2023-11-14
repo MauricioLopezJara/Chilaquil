@@ -94,31 +94,17 @@ def pagina_contacto():
         link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link, unsafe_allow_html=True)
 
-
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
 
 # Elementos del menú
 opciones = ["Bienvenida", "Datos del proyecto", "Contacto"]
-icons = ["cast", "book", "envelope"]
-
-# Crear opciones con iconos en formato HTML
-opciones_con_iconos = [f'<i class="material-icons">{icon}</i> {opcion}' for icon, opcion in zip(icons, opciones)]
-
-# Seleccionar opción del menú
-eleccion_index = st.sidebar.radio("Selecciona una opción:", range(len(opciones)), format_func=lambda i: opciones_con_iconos[i])
-
-# Obtener la elección y el ícono seleccionado
-eleccion = opciones[eleccion_index]
-icono_seleccionado = icons[eleccion_index]
+eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 
 # Contenido de la página según la elección
 if eleccion == "Bienvenida":
-    st.sidebar.markdown(f'<i class="material-icons">{icono_seleccionado}</i> {eleccion}', unsafe_allow_html=True)
     pagina_bienvenida()
 elif eleccion == "Datos del proyecto":
-    st.sidebar.markdown(f'<i class="material-icons">{icono_seleccionado}</i> {eleccion}', unsafe_allow_html=True)
     Datos_del_proyecto()
 elif eleccion == "Contacto":
-    st.sidebar.markdown(f'<i class="material-icons">{icono_seleccionado}</i> {eleccion}', unsafe_allow_html=True)
     pagina_contacto()
