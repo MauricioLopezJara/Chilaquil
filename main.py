@@ -6,7 +6,7 @@ import base64
 # Configuración de la página
 st.set_page_config(
     page_title="ManoTech",
-    page_icon="🦾🤖",
+    page_icon="🤖",
     layout="centered"
 )
 
@@ -27,8 +27,12 @@ def pagina_bienvenida():
         st.markdown(pdf_display, unsafe_allow_html=True)
 
     # Agrega un botón para mostrar el PDF
-    if st.button("Mostrar PDF del Proyecto ManoTech"):
+    if st.button("Mostrar PDF"):
         show_pdf('PosterFinalManotechFinal.pdf')
+
+    # Agrega un botón para ocultar el PDF y cancelar la ejecución de show_pdf
+    if st.button("Ocultar PDF"):
+        st.markdown("PDF oculto")
     
     st.header("Fase Inicial del proyecto")
     st.write("Este proyecto tiene muchas ventajas y se recomienda hacer para incentivar el gusto por la tecnologia al igual que por la programacion esta pagina web fue creada usando python y la libreria streamlit esperamos que la puedan disfrutar y aprovechar los recursos open sources que les queremos brindar igualmente cuenta con links a los cuales se pueden comunicar con nosotros muchas gracias por visitar nuestra web oficial del proyecto")
