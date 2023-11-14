@@ -96,6 +96,9 @@ def pagina_contacto():
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu")
+
+# Elementos del menú
+opciones = ["Bienvenida", "Datos del proyecto", "Contacto"]
 eleccion = st.sidebar.selectbox("Selecciona una opción:", opciones)
 
 # Contenido de la página según la elección
