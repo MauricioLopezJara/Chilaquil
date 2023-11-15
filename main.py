@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import base64
-from pdf2image import convert_from_path
 
 # Configuración de la página
 st.set_page_config(
