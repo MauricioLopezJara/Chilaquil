@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import base64
+from pdf2image import convert_from_path
 
 # Configuración de la página
 st.set_page_config(
@@ -21,15 +22,12 @@ def pagina_bienvenida():
     st.write("Este proyecto busca demostrar el poder que se puede generar con un poco de conocimiento en programacion al igual que en electronica")
     
     def show_pdf(file_path):
-        with open(file_path, "rb") as f:
-            base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
+    images = convert_from_path(file_path)
+    for i, image in enumerate(images):
+        st.image(image, caption=f'Page {i+1}', use_column_width=True)
 
-    if st.button("Ocultar PDF"):
-        st.markdown("")
-    if st.button("Mostrar PDF del proyecto ManoTech"):
-        show_pdf('PosterFinalManotechFinal.pdf')
+if st.button("Mostrar PDF del proyecto ManoTech"):
+    show_pdf('PosterFinalManotechFinal.pdf')
     
     st.header("Fase Inicial del proyecto")
     st.write("Este proyecto tiene muchas ventajas y se recomienda hacer para incentivar el gusto por la tecnologia al igual que por la programacion esta pagina web fue creada usando python y la libreria streamlit esperamos que la puedan disfrutar y aprovechar los recursos open sources que les queremos brindar igualmente cuenta con links a los cuales se pueden comunicar con nosotros muchas gracias por visitar nuestra web oficial del proyecto")
