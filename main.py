@@ -18,7 +18,7 @@ def pagina_bienvenida():
     # Muestra la imagen en la columna central
     mid_col.image("Uni.png", width=200)
     st.title("Poster Machine Hand")
-    st.write("Este proyecto busca demostrar el poder que se puede generar con un poco de conocimiento en programacion al igual que en electronica")
+    st.write("Este proyecto busca demostrar el poder que se puede generar con un poco de conocimiento en programación, al igual que en electrónica.")
     
     def show_pdf(file_path):
         with open(file_path, "rb") as f:
@@ -32,8 +32,8 @@ def pagina_bienvenida():
         show_pdf('PosterFinalManotechFinal.pdf')
     
     st.header("Fase Inicial del proyecto")
-    st.write("Este proyecto tiene muchas ventajas y se recomienda hacer para incentivar el gusto por la tecnologia al igual que por la programacion esta pagina web fue creada usando python y la libreria streamlit esperamos que la puedan disfrutar y aprovechar los recursos open sources que les queremos brindar igualmente cuenta con links a los cuales se pueden comunicar con nosotros muchas gracias por visitar nuestra web oficial del proyecto")
-        
+    st.write("Esta iniciativa posee numerosas ventajas y se sugiere llevar a cabo para fomentar el interés tanto en tecnología como en programación. Este sitio web ha sido desarrollado utilizando Python y la biblioteca Streamlit. Esperamos que lo encuentren útil y puedan aprovechar los recursos de código abierto que deseamos ofrecerles. Asimismo, dispone de enlaces a través de los cuales pueden ponerse en contacto con nosotros. Agradecemos mucho su visita a nuestra página web oficial del proyecto.")
+             
     # URL del video de YouTube
     video_url = "https://youtu.be/lvIDTmyw6RU?si=I0cxedUcPvUTHEkY"
 
@@ -42,20 +42,20 @@ def pagina_bienvenida():
     st.header("Presiona los siguientes botones para obtener mas informacion al respecto")
     # Botón
     if st.button("1.- ¡Arriesgar la salud de los trabajadores!"):
-        st.write("""En algunos trabajas en diversos campos como en desarrollo de cultivos celulares es muy importante la biosegurad de los trabajadores y es muy importantes para los patrones la seguridad de sus empleados por tal motivo es mejor que algunas maquinas hagan el trabajo de los hombres""")
+        st.write("""En algunos trabajos, en diversos campos como el desarrollo de cultivos celulares, es crucial garantizar la bioseguridad de los trabajadores. También es fundamental para los empleadores velar por la seguridad de sus empleados. Por tal motivo, resulta preferible que algunas máquinas realicen las tareas en lugar de los seres humanos.""")
     if st.button("2.- ¡Automatizacion de procesos que requieran alta precision!"):
-        st.write("""Algunas maquinas necesitan un alto grado de presicion y que mejor que la computadora o la maquina pueda copiar exactamente el movimiento de una persona y se pueda programar correctamente el moviemnto a realizar para una optima ejecucio de la tarea o trabajo que este buscando desempeñar""")
+        st.write("""Algunas máquinas requieren un elevado grado de precisión, y qué mejor que una computadora o una máquina pueda replicar exactamente el movimiento de una persona. Se puede programar con precisión el movimiento a realizar para lograr una ejecución óptima de la tarea o trabajo que se esté buscando desempeñar.""")
     if st.button("3.- ¡Puede servir para mejorar las capacitaciones de los trabajadores "):
-        st.write("""Mejorando los procesos podemos almacenar los objetivos conseguidos con rastreos de manos los cuales pueden servir para que los trabajadore tengan un mejor entendimiendo de que y como se debe hacer la actividad y en base a esto minimizar los riesgos y maximizar el exito en las actividades""")
+        st.write("""Al mejorar los procesos, podemos registrar los objetivos alcanzados mediante seguimientos precisos de manos. Estos seguimientos pueden proporcionar a los trabajadores una comprensión más clara de qué y cómo se debe realizar la actividad. Con esto como base, se pueden minimizar los riesgos y maximizar el éxito en las actividades.""")
     if st.button("4.- ¡Mejorar la calidad de vida de los trabajadores "):
-        st.write("""Cuando cuidamos a los trabajadores y los ayudamos con mejores capacitaciones y mejores herramientas no solo mejorams la calidad de vida de los trabajadores si no que aumentamos su productividad lo cual en terminos economicos siempre resulta un beneficio economico para todos.""")
+        st.write("""Al cuidar a los trabajadores y brindarles capacitaciones mejoradas junto con herramientas más eficientes, no solo mejoramos la calidad de vida de los trabajadores, sino que también incrementamos su productividad. Esto, en términos económicos, siempre se traduce en beneficios para todos.""")
     if st.button("5.- ¡Optimizacion de Procesos mecanicos "):
-        st.write("""Este proyecto tiene una gran ventaja el cual es la escalabilidad y automatizacion de proceso ya que una simple mano parece no ser una buena idea sin embargo el proceso de copiar y reproducir el moviemiento de 1 mano humana no solo tiene este potencial este trabajao se puede usar para 10 manos o 100 o 1000 al mismo tiempo lo cual podria disminuir los tiempos de algunas actividades""")
+        st.write("""Este proyecto presenta una gran ventaja: la escalabilidad y automatización de procesos. A primera vista, utilizar simplemente una mano puede no parecer una buena idea. Sin embargo, el proceso de copiar y reproducir el movimiento de una mano humana no solo tiene este potencial, sino que también puede aplicarse a 10, 100 o incluso 1000 manos simultáneamente. Esto podría reducir significativamente los tiempos de diversas actividades.""")
 
 # Función para la página de información (Opción 2)
 def Datos_del_proyecto():
     st.title("Información sobre la contruccion del proyecto Mano Tech")
-    st.write("A continuacion podra Observar el diagrama esquematico del Proyecto al igual que algunos videos que muestran las fases de la contruccion de este muy bonito e interesante proyecto")
+    st.write("A continuación, podrá observar el diagrama esquemático del proyecto, así como algunos videos que muestran las fases de la construcción de este proyecto, que es muy bonito e interesante.")
     st.title("Diagrama esquimatico")
     st.image("Esquematico.jpeg")
     st.title("Materiales para el circuito:")
@@ -66,11 +66,12 @@ def Datos_del_proyecto():
     # Mostrar la tabla
     st.table(df)
     st.title("Diagrama de conecciones")
-    st.write("A continuacion mostraremos el diagrama esquematico en forma de diagrama de Tinkercad mas sencillo de distinguir lo que serian las conecciones")
+    st.write("Enseguida, presentaremos el diagrama esquemático en formato de Tinkercad, diseñado de manera más sencilla para facilitar la distinción de las conexiones.")
     st.image("Imagen3.png")
     st.title("Resultados Obtenidos")
-    st.write("Sinceramente creemos que el proyecto tiene un gran alcance y al mismo tiempo es muy divertido de hacer este proyecto nos sirvio mucho para darnos cuenta que efectivamente si lo puedes imaginar lo puedes crear muchas gracias por visitar nuestra pagina y checar nuestro proyecto")
-    
+    st.write("Con toda sinceridad, consideramos que este proyecto posee un alcance significativo y, al mismo tiempo, ofrece una experiencia sumamente enriquecedora. La realización de este proyecto ha sido de gran utilidad para nosotros, demostrándonos que, efectivamente, si puedes imaginarlo, puedes crearlo. Agradecemos profundamente su visita a nuestra página y la revisión de nuestro proyecto.")
+    video_url2 = "https://youtu.be/lvIDTmyw6RU?si=I0cxedUcPvUTHEkY"
+    st.video(video_url2)
 
 # Función para la página de contacto (Opción 3)
 def pagina_contacto():
