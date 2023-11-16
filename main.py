@@ -96,6 +96,8 @@ def pagina_contacto():
         st.markdown("**Apellido:** Meza Huerta")
         link3 = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link3, unsafe_allow_html=True)
+        link4 = '<a href="https://www.instagram.com/bioimpedancia_ugto/" target="_blank">Instagram</a>'
+        st.markdown(link4, unsafe_allow_html=True)
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu... 🏡")
