@@ -70,7 +70,7 @@ def Datos_del_proyecto():
     st.image("Imagen3.png")
     st.title("Resultados Obtenidos")
     st.write("Con toda sinceridad, consideramos que este proyecto posee un alcance significativo y, al mismo tiempo, ofrece una experiencia sumamente enriquecedora. La realización de este proyecto ha sido de gran utilidad para nosotros, demostrándonos que, efectivamente, si puedes imaginarlo, puedes crearlo. Agradecemos profundamente su visita a nuestra página y la revisión de nuestro proyecto.")
-    video_url2 = "https://youtu.be/lvIDTmyw6RU?si=I0cxedUcPvUTHEkY"
+    video_url2 = "https://youtu.be/T943gCbbA9U"
     st.video(video_url2)
 
 # Función para la página de contacto (Opción 3)
