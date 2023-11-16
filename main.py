@@ -85,15 +85,17 @@ def pagina_contacto():
         st.image("4.png", width=180)
         st.markdown("**Nombre:** Luis Mauricio")
         st.markdown("**Apellido:** Lopez Jaramillo")
-        link = '<a href="procesamientodigitalsi@gmail.com" target="_blank">Correo</a>'
+        link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
         st.markdown(link, unsafe_allow_html=True)
+        link2 = '<a href="https://www.instagram.com/mauri_lopez.7/">Instagram</a>'
+        st.markdown(link2, unsafe_allow_html=True)
 
     with Cinco_col:
         st.image("5.png", width=180)
         st.markdown("**Nombre:** Sergio Arturo")
         st.markdown("**Apellido:** Meza Huerta")
-        link = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
-        st.markdown(link, unsafe_allow_html=True)
+        link3 = '<a href="https://www.linkedin.com/in/luis-mauricio-lopez-jaramillo-108b09290/" target="_blank">Linkedin</a>'
+        st.markdown(link3, unsafe_allow_html=True)
 
 # Título del menú
 st.sidebar.markdown("Bienvenido al Menu... 🏡")
