@@ -37,9 +37,11 @@ def pagina_bienvenida():
              
     # URL del video de YouTube
     video_url = "https://youtu.be/lvIDTmyw6RU?si=I0cxedUcPvUTHEkY"
+    Vid = "https://youtu.be/peLmnQJAle0?feature=shared"
 
     # Mostrar el video de YouTube en la interfaz
     st.video(video_url)
+    st.video(Vid)
     st.header("Presiona los siguientes botones para obtener mas informacion al respecto")
     # Botón
     if st.button("1.- ¡Arriesgar la salud de los trabajadores!"):
