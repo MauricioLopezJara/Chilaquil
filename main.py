@@ -41,7 +41,7 @@ def pagina_bienvenida():
 
     # Mostrar el video de YouTube en la interfaz
     st.video(video_url)
-    st.header("Fase de Pruebas y analisis del Funcionamiento de los Servomotores")
+    st.header("Fase de Pruebas y analisis del funcionamiento de los servomotores")
     st.video(Vid)
     st.header("Presiona los siguientes botones para obtener mas informacion al respecto")
     # Botón
