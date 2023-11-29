@@ -40,7 +40,7 @@ def pagina_bienvenida():
     Vid = "https://youtu.be/peLmnQJAle0?feature=shared"
 
     # Mostrar el video de YouTube en la interfaz
-    st.title("Fase de Pruebas y analisis del Funcionamiento de los Servomotores")
+    st.header("Fase de Pruebas y analisis del Funcionamiento de los Servomotores")
     st.video(video_url)
     st.video(Vid)
     st.header("Presiona los siguientes botones para obtener mas informacion al respecto")
