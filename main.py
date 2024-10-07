@@ -29,16 +29,8 @@ def pagina_bienvenida():
         href = f'<a href="data:application/octet-stream;base64,{b64}" download="PosterFinalManotech.pdf">Descargar PDF del proyecto ManoTech</a>'
         st.markdown(href, unsafe_allow_html=True)
 
-    # Enlace para abrir el PDF en una nueva pestaña
-    def open_pdf(file_path):
-        pdf_display = f'<a href="{file_path}" target="_blank">Abrir PDF del proyecto ManoTech</a>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
-
-    # Botón para abrir el PDF en una nueva pestaña
-    if st.button("Abrir PDF del proyecto ManoTech en una nueva pestaña"):
-        open_pdf('PosterFinalManotechFinaljeje.pdf')
-    if st.button("Descargar PDF del proyecto ManoTech"):
-        download_pdf('PosterFinalManotechFinaljeje.pdf')
+    # Llamada a la función de descarga directamente con un botón
+    download_pdf('PosterFinalManotechFinaljeje.pdf')
     
     st.header("Fase Inicial del proyecto")
     st.write("Esta iniciativa posee numerosas ventajas y se sugiere llevar a cabo para fomentar el interés tanto en tecnología como en programación. Este sitio web ha sido desarrollado utilizando Python y la biblioteca Streamlit. Esperamos que lo encuentren útil y puedan aprovechar los recursos de código abierto que deseamos ofrecerles. Asimismo, dispone de enlaces a través de los cuales pueden ponerse en contacto con nosotros. Agradecemos mucho su visita a nuestra página web oficial del proyecto.")
