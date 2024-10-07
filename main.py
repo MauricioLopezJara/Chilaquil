@@ -30,7 +30,7 @@ def pagina_bienvenida():
     if st.button("Ocultar PDF"):
         st.markdown("")
     if st.button("Mostrar PDF del proyecto ManoTech"):
-        show_pdf('PosterFinalManotechFinal.pdf')
+        show_pdf('PosterFinalManotechFinaljeje.pdf')
     
     st.header("Fase Inicial del proyecto")
     st.write("Esta iniciativa posee numerosas ventajas y se sugiere llevar a cabo para fomentar el interés tanto en tecnología como en programación. Este sitio web ha sido desarrollado utilizando Python y la biblioteca Streamlit. Esperamos que lo encuentren útil y puedan aprovechar los recursos de código abierto que deseamos ofrecerles. Asimismo, dispone de enlaces a través de los cuales pueden ponerse en contacto con nosotros. Agradecemos mucho su visita a nuestra página web oficial del proyecto.")
