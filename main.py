@@ -13,6 +13,7 @@ st.set_page_config(
 
 # Función para la página de bienvenida
 def pagina_bienvenida():
+    st.balloons()
     # Crea 3 columnas
     left_col, mid_col, right_col = st.columns(3)
 
