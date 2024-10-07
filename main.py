@@ -21,16 +21,26 @@ def pagina_bienvenida():
     st.title("Poster Machine Hand")
     st.write("Este proyecto busca demostrar el poder que se puede generar con un poco de conocimiento en programación, al igual que en electrónica.")
     
+    # Función para mostrar el PDF
     def show_pdf(file_path):
         with open(file_path, "rb") as f:
             base64_pdf = base64.b64encode(f.read()).decode('utf-8')
         pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
         st.markdown(pdf_display, unsafe_allow_html=True)
 
-    if st.button("Ocultar PDF"):
-        st.markdown("")
+    # Función para descargar el PDF
+    def download_pdf(file_path):
+        with open(file_path, "rb") as f:
+            pdf_data = f.read()
+        b64 = base64.b64encode(pdf_data).decode('utf-8')
+        href = f'<a href="data:application/octet-stream;base64,{b64}" download="PosterFinalManotech.pdf">Descargar PDF del proyecto ManoTech</a>'
+        st.markdown(href, unsafe_allow_html=True)
+
+    # Opciones de visualización
     if st.button("Mostrar PDF del proyecto ManoTech"):
         show_pdf('PosterFinalManotechFinaljeje.pdf')
+    if st.button("Descargar PDF del proyecto ManoTech"):
+        download_pdf('PosterFinalManotechFinaljeje.pdf')
     
     st.header("Fase Inicial del proyecto")
     st.write("Esta iniciativa posee numerosas ventajas y se sugiere llevar a cabo para fomentar el interés tanto en tecnología como en programación. Este sitio web ha sido desarrollado utilizando Python y la biblioteca Streamlit. Esperamos que lo encuentren útil y puedan aprovechar los recursos de código abierto que deseamos ofrecerles. Asimismo, dispone de enlaces a través de los cuales pueden ponerse en contacto con nosotros. Agradecemos mucho su visita a nuestra página web oficial del proyecto.")
